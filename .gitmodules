@@ -1,0 +1,3 @@
+[submodule "vendor/dragscroll"]
+	path = vendor/dragscroll
+	url = https://github.com/asvd/dragscroll.git
