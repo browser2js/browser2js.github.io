@@ -130,6 +130,16 @@ thead th:last-child, tbody td:last-child { padding-right: 0; text-align: right; 
 .mini-heading { font: 15px/1.5 var(--mono); color: #8f8f9a; letter-spacing: .8px; }
 .vendor-response blockquote { margin: 25px 0 60px; font-size: 25px; line-height: 1.6; letter-spacing: -.02em; }
 .vendor-response blockquote:last-of-type { margin-bottom: 0; color: #b9b6b2; }
+.timeline-section { border-bottom: 1px solid var(--line); }
+.timeline-list { list-style: none; margin-top: 76px; }
+.timeline-list li { position: relative; display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 48px; padding-bottom: 54px; }
+.timeline-list li::before { content: ""; position: absolute; left: 161px; top: 12px; bottom: -12px; width: 1px; background: var(--line); }
+.timeline-list li::after { content: ""; position: absolute; left: 157px; top: 12px; width: 9px; height: 9px; border-radius: 50%; background: var(--red); }
+.timeline-list li:last-child { padding-bottom: 0; }
+.timeline-list li:last-child::before { display: none; }
+.timeline-year { color: var(--red); font: 28px/1.4 var(--mono); }
+.timeline-list p { max-width: 760px; color: var(--muted); font-size: 20px; line-height: 1.8; }
+.timeline-list li:last-child p { color: var(--ink); }
 .faq-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 100px; }
 .faq-list { border-top: 1px solid var(--line); }
 details { border-bottom: 1px solid var(--line); }
@@ -213,6 +223,12 @@ details p { margin: 0 0 30px; color: var(--muted); font-size: 15px; line-height:
   .table-note { font-size: 16px; }
   .vendor-response { padding-top: 15px; }
   .vendor-response blockquote { margin-bottom: 42px; font-size: 23px; }
+  .timeline-list { margin-top: 48px; }
+  .timeline-list li { grid-template-columns: 60px minmax(0, 1fr); gap: 30px; padding-bottom: 38px; }
+  .timeline-list li::before { left: 76px; top: 8px; bottom: -8px; }
+  .timeline-list li::after { left: 72px; top: 8px; }
+  .timeline-year { font-size: 18px; }
+  .timeline-list p { font-size: 17px; }
   .faq-grid h2 br { display: none; }
   summary { padding-block: 25px; font-size: 15px; }
   details p { font-size: 14px; }
